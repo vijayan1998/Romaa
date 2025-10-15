@@ -39,6 +39,29 @@ class Appimage {
   static const String support = 'assets/images/support.png';
   static const String logout = 'assets/images/logout.png';
   static const String userimg = 'assets/images/userimg.png';
+  static const String uparrow = 'assets/images/uparrow.png';
+  static const String mall = 'assets/images/mall.png';
+  static const String park = 'assets/images/park.png';
+  static const String renovation = 'assets/images/renovation.png';
+  static const String mallconstruction = 'assets/images/mallconstruction.png';
+  static const String search = 'assets/images/search.png';
+  static const String boq = 'assets/icons/boq.png';
+  static const String sitedraw = 'assets/icons/sitedraw.png';
+  static const String scheduleproject = 'assets/icons/schedule.png';
+  static const String workdone = 'assets/icons/done.png';
+  static const String dailylabor = 'assets/icons/labor.png';
+  static const String materialreceived = 'assets/icons/material.png';
+  static const String materialissue = 'assets/icons/materialissue.png';
+  static const String stockregister = 'assets/icons/stockregister.png';
+  static const String requestproject = 'assets/icons/request.png';
+  static const String siteassets = 'assets/icons/siteassets.png';
+  static const String weekbilling = 'assets/icons/billing.png';
+  static const String reconciliation = 'assets/icons/reconciliation.png';
+  static const String planned = 'assets/icons/plan.png';
+  static const String entry = 'assets/icons/entry.png';
+  static const String filter = 'assets/icons/filter.png';
+  static const String boqview = 'assets/icons/boqview.png';
+
 
   
 }

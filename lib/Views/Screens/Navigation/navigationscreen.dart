@@ -1,6 +1,7 @@
 // ignore_for_file: must_be_immutable
 
 import 'package:flutter/material.dart';
+import 'package:romaa/Views/Screens/Navigation/Projects/projects.dart';
 import 'package:romaa/Views/Screens/Navigation/calenderscreen.dart';
 import 'package:romaa/Views/Screens/Navigation/homescreen.dart';
 import 'package:romaa/Views/Screens/Navigation/profilescreen.dart';
@@ -35,7 +36,7 @@ class _NavigationScreenState extends State<NavigationScreen>
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: widget.index == 0 ? HomeScreen() : widget.index == 1 ? HomeScreen()
+        child: widget.index == 0 ? HomeScreen() : widget.index == 1 ? ProjectScreen()
         : widget.index == 2 ? RequestScreen() : widget.index == 3 ? CalenderScreen()
         : widget.index == 4 ? ProfileScreen(): HomeScreen()
       ),

@@ -1,5 +1,8 @@
 import 'package:get/get_navigation/src/routes/get_route.dart';
 import 'package:get/get_navigation/src/routes/transitions_type.dart';
+import 'package:romaa/Views/Screens/Navigation/Projects/boq.dart';
+import 'package:romaa/Views/Screens/Navigation/Projects/boqview.dart';
+import 'package:romaa/Views/Screens/Navigation/Projects/projectdetails.dart';
 import 'package:romaa/Views/Screens/Navigation/navigationscreen.dart';
 import 'package:romaa/Views/Screens/Onboarding/loginscreen.dart';
 import 'package:romaa/Views/Screens/Onboarding/onboardingscreen.dart';
@@ -36,6 +39,24 @@ class AppRoute {
     GetPage(
       name: Appnames.navigationscreen,
       page: () => NavigationScreen(index: 0,) ,
+      transitionDuration: const Duration(milliseconds: 250),
+      transition: Transition.leftToRightWithFade ,
+    ),
+    GetPage(
+      name: Appnames.projectdetails,
+      page: () => ProjectDetailsScreen() ,
+      transitionDuration: const Duration(milliseconds: 250),
+      transition: Transition.leftToRightWithFade ,
+    ),
+    GetPage(
+      name: Appnames.boq,
+      page: () => BOQscreen() ,
+      transitionDuration: const Duration(milliseconds: 250),
+      transition: Transition.leftToRightWithFade ,
+    ),
+    GetPage(
+      name: Appnames.boqview,
+      page: () => BOQViewScreen() ,
       transitionDuration: const Duration(milliseconds: 250),
       transition: Transition.leftToRightWithFade ,
     ),

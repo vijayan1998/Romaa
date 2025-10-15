@@ -4,4 +4,7 @@ class Appnames {
   static const String login = '/loginScreen';
   static const String otp = '/otpScreen';
   static const String navigationscreen = '/navigationScreen';
+  static const String projectdetails = '/projectdetailScreen';
+  static const String boq = '/boq';
+  static const String boqview = '/boqview';
 }
