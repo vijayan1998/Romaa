@@ -19,16 +19,19 @@ class _ProjectDetailsScreenState extends State<ProjectDetailsScreen> {
       'image': Appimage.boq,
       'title': 'BOQ',
       'subtitle': 'Bill of Quantities details',
+      'route': Appnames.boq,
     },
      {
       'image': Appimage.sitedraw,
       'title': 'Site Drawing',
       'subtitle': 'Uploaded plans & revisions',
+      'route': Appnames.sitedraw,
     },
      {
       'image': Appimage.scheduleproject,
       'title': 'Schedule',
       'subtitle': 'Daily, Weekly, Monthly, Project schedule, etc..',
+      'route': Appnames.schedule,
     },
      {
       'image': Appimage.workdone,
@@ -44,26 +47,31 @@ class _ProjectDetailsScreenState extends State<ProjectDetailsScreen> {
       'image': Appimage.materialreceived,
       'title': 'Material Received',
       'subtitle': 'Logs with receipts',
+      'route': Appnames.materialreceived,
     },
      {
       'image': Appimage.materialissue,
       'title': 'Material Issued',
       'subtitle': 'Tracking usage',
+      'route': Appnames.materialissue
     },
      {
       'image': Appimage.stockregister,
       'title': 'Stock Register',
       'subtitle': 'Available site inventory',
+      'route':Appnames.stockregister,
     },
      {
       'image': Appimage.requestproject,
       'title': 'Requests',
       'subtitle': 'Site requests raised',
+      'route': Appnames.requestscreen,
     },
          {
       'image': Appimage.siteassets,
       'title': 'Site Assets',
       'subtitle': 'Tools, equipment at site',
+      'route': Appnames.siteassets,
     },
          {
       'image': Appimage.weekbilling,
@@ -246,7 +254,7 @@ class _ProjectDetailsScreenState extends State<ProjectDetailsScreen> {
                           final item = modulelist[index];
                           return InkWell(
                             onTap: (){
-                              Get.toNamed(Appnames.boq);
+                            Get.toNamed(item['route']);
                             },
                             child: Container(
                               margin: EdgeInsets.all(4),

@@ -238,8 +238,9 @@ class _BOQViewScreenState extends State<BOQViewScreen> {
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Container(
+                            height: 80,
                     width: MediaQuery.of(context).size.width / 2.5,
-                    padding: EdgeInsets.all(16),
+                    padding: EdgeInsets.all(8),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
                       border: Border.all(
@@ -263,8 +264,9 @@ class _BOQViewScreenState extends State<BOQViewScreen> {
                   ),
                   8.vspace,
                   Container(
+                    height: 80,
                     width: MediaQuery.of(context).size.width/2.5,
-                    padding: EdgeInsets.all(16),
+                    padding: EdgeInsets.all(8),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
                       border: Border.all(
@@ -288,8 +290,9 @@ class _BOQViewScreenState extends State<BOQViewScreen> {
                   ),
                   8.vspace,
                   Container(
+                    height: 80,
                     width: MediaQuery.of(context).size.width/2.5,
-                    padding: EdgeInsets.all(16),
+                    padding: EdgeInsets.all(8),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
                       border: Border.all(
@@ -313,8 +316,9 @@ class _BOQViewScreenState extends State<BOQViewScreen> {
                   ),
                   8.vspace,
                   Container(
+                    height: 80,
                     width: MediaQuery.of(context).size.width/2.5,
-                    padding: EdgeInsets.all(16),
+                    padding: EdgeInsets.all(8),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
                       border: Border.all(
@@ -338,8 +342,9 @@ class _BOQViewScreenState extends State<BOQViewScreen> {
                   ),
                   8.vspace,
                   Container(
+                    height: 80,
                     width: MediaQuery.of(context).size.width /2.5,
-                    padding: EdgeInsets.all(16),
+                    padding: EdgeInsets.all(8),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
                       border: Border.all(
@@ -369,8 +374,9 @@ class _BOQViewScreenState extends State<BOQViewScreen> {
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Container(
+                            height: 80,
                     width: MediaQuery.of(context).size.width / 2.5,
-                    padding: EdgeInsets.all(16),
+                    padding: EdgeInsets.all(8),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
                       border: Border.all(
@@ -394,8 +400,9 @@ class _BOQViewScreenState extends State<BOQViewScreen> {
                   ),
                   8.vspace,
                   Container(
+                    height: 80,
                     width: MediaQuery.of(context).size.width/2.5,
-                    padding: EdgeInsets.all(16),
+                    padding: EdgeInsets.all(8),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
                       border: Border.all(
@@ -410,7 +417,6 @@ class _BOQViewScreenState extends State<BOQViewScreen> {
                         Text('Base Total/Rate per cum',style: Theme.of(context).textTheme.titleSmall!.copyWith(
                           fontWeight: FontWeight.bold,
                         ),),
-                        8.vspace,
                         Text('₹750,000 / ₹5,000',style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                           color: Color(0xff61758A),
                         ),),
@@ -419,8 +425,9 @@ class _BOQViewScreenState extends State<BOQViewScreen> {
                   ),
                   8.vspace,
                   Container(
+                    height: 80,
                     width: MediaQuery.of(context).size.width/2.5,
-                    padding: EdgeInsets.all(16),
+                    padding: EdgeInsets.all(8),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
                       border: Border.all(
@@ -435,7 +442,6 @@ class _BOQViewScreenState extends State<BOQViewScreen> {
                         Text('Qualifier Total for 1000 cum',style: Theme.of(context).textTheme.titleSmall!.copyWith(
                           fontWeight: FontWeight.bold,
                         ),),
-                        8.vspace,
                         Text('₹0',style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                           color: Color(0xff61758A),
                         ),),
@@ -444,8 +450,9 @@ class _BOQViewScreenState extends State<BOQViewScreen> {
                   ),
                   8.vspace,
                   Container(
+                    height: 80,
                     width: MediaQuery.of(context).size.width/2.5,
-                    padding: EdgeInsets.all(16),
+                    padding: EdgeInsets.all(8),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
                       border: Border.all(
@@ -460,7 +467,6 @@ class _BOQViewScreenState extends State<BOQViewScreen> {
                         Text('Qualifier rate per cum',style: Theme.of(context).textTheme.titleSmall!.copyWith(
                           fontWeight: FontWeight.bold,
                         ),),
-                        8.vspace,
                         Text('₹750,000 / ₹5,000',style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                           color: Color(0xff61758A),
                         ),),
@@ -469,8 +475,9 @@ class _BOQViewScreenState extends State<BOQViewScreen> {
                   ),
                   8.vspace,
                   Container(
+                    height: 80,
                     width: MediaQuery.of(context).size.width /2.5,
-                    padding: EdgeInsets.all(16),
+                    padding: EdgeInsets.all(8),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
                       border: Border.all(
@@ -485,7 +492,6 @@ class _BOQViewScreenState extends State<BOQViewScreen> {
                         Text('Net rate',style: Theme.of(context).textTheme.titleSmall!.copyWith(
                           fontWeight: FontWeight.bold,
                         ),),
-                        8.vspace,
                         Text('₹750,000 / ₹5,000',style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                           color: Color(0xff61758A),
                         ),),

@@ -61,6 +61,8 @@ class Appimage {
   static const String entry = 'assets/icons/entry.png';
   static const String filter = 'assets/icons/filter.png';
   static const String boqview = 'assets/icons/boqview.png';
+  static const String dropdown = 'assets/icons/dropdown.png';
+  static const String materialedit = 'assets/icons/edit.png'; 
 
 
   
