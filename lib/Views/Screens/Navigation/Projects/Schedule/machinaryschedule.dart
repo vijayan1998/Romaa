@@ -5,14 +5,14 @@ import 'package:romaa/Views/Utilies/image.dart';
 import 'package:romaa/Views/Utilies/sizedbox.dart';
 import 'package:romaa/Views/Widgets/retainingwall.dart';
 
-class DailyDetails extends StatefulWidget {
-  const DailyDetails({super.key});
+class MachinarySchedule extends StatefulWidget {
+  const MachinarySchedule({super.key});
 
   @override
-  State<DailyDetails> createState() => _DailyDetailsState();
+  State<MachinarySchedule> createState() => _MachinaryScheduleState();
 }
 
-class _DailyDetailsState extends State<DailyDetails> {
+class _MachinaryScheduleState extends State<MachinarySchedule> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,7 +31,7 @@ class _DailyDetailsState extends State<DailyDetails> {
                       }, 
                       icon: Icon(Icons.arrow_back)),
                       16.hspace,
-                      Text('Schedule - Daily',style: Theme.of(context).textTheme.titleMedium!.copyWith(
+                      Text('Schedule - Machinery Schedule',style: Theme.of(context).textTheme.titleMedium!.copyWith(
                           fontWeight: FontWeight.bold,
                         ),),
                         Spacer(),
@@ -75,4 +75,3 @@ class _DailyDetailsState extends State<DailyDetails> {
     );
   }
 }
-

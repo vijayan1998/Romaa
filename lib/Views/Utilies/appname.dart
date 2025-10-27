@@ -17,5 +17,14 @@ class Appnames {
   static const String stockregister = '/stockregister';
   static const String requestscreen = '/requestscreen';
   static const String siteassets = '/siteassets';
+  static const String scheduleweekly = '/scheduleweekly';
+  static const String schedulemonthly = '/schedulemonthly';
+  static const String scheduleproject = '/scheduleproject';
+  static const String manpower = '/manpower';
+  static const String machineryschedule = '/machineryschedule';
+  static const String profileedit = '/profileedit';
+  static const String changepassword = '/changepassword';
+  static const String appsettings = '/appsettings';
+  static const String helpsupport = '/helpsupport';
   
 }

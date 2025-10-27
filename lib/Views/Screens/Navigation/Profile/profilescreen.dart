@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:romaa/Views/Utilies/appname.dart';
 import 'package:romaa/Views/Utilies/image.dart';
 import 'package:romaa/Views/Utilies/sizedbox.dart';
 
@@ -31,7 +33,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   fontSize: 20
                           ),),
                           Spacer(),
-                    IconButton(onPressed: (){}, icon: Image.asset(Appimage.edit))
+                    IconButton(onPressed: (){
+                      Get.toNamed(Appnames.profileedit);
+                    }, icon: Image.asset(Appimage.edit))
                     ],
                   ),
                 ),
@@ -50,7 +54,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 ),),
               ),
               Center(
-                child: Text('Site Engineer',style: Theme.of(context).textTheme.titleSmall!.copyWith(
+                child:Text('Site Engineer',style: Theme.of(context).textTheme.titleSmall!.copyWith(
                   fontWeight: FontWeight.w400,
                 ),),
               ),
@@ -124,21 +128,36 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     leading: Image.asset(Appimage.myprojects),
                     title: Text('My Projects',style: Theme.of(context).textTheme.bodyLarge),
                   ),
-                   ListTile(
-                    contentPadding: EdgeInsets.all(0),
-                    leading: Image.asset(Appimage.changepassword),
-                    title: Text('Change Password',style: Theme.of(context).textTheme.bodyLarge),
-                  ),
-                   ListTile(
-                    contentPadding: EdgeInsets.all(0),
-                    leading: Image.asset(Appimage.settings),
-                    title: Text('App Settings',style: Theme.of(context).textTheme.bodyLarge),
-                  ),
-                   ListTile(
-                    contentPadding: EdgeInsets.all(0),
-                    leading: Image.asset(Appimage.support),
-                    title: Text('Help & Support',style: Theme.of(context).textTheme.bodyLarge),
-                  ),
+                   InkWell(
+                    onTap: (){
+                      Get.toNamed(Appnames.changepassword);
+                    },
+                     child: ListTile(
+                      contentPadding: EdgeInsets.all(0),
+                      leading: Image.asset(Appimage.changepassword),
+                      title: Text('Change Password',style: Theme.of(context).textTheme.bodyLarge),
+                                       ),
+                   ),
+                   InkWell(
+                    onTap: (){
+                      Get.toNamed(Appnames.appsettings);
+                    },
+                     child: ListTile(
+                      contentPadding: EdgeInsets.all(0),
+                      leading: Image.asset(Appimage.settings),
+                      title: Text('App Settings',style: Theme.of(context).textTheme.bodyLarge),
+                                       ),
+                   ),
+                   InkWell(
+                    onTap: (){
+                      Get.toNamed(Appnames.helpsupport);
+                    },
+                     child: ListTile(
+                      contentPadding: EdgeInsets.all(0),
+                      leading: Image.asset(Appimage.support),
+                      title: Text('Help & Support',style: Theme.of(context).textTheme.bodyLarge),
+                                       ),
+                   ),
                    ListTile(
                     contentPadding: EdgeInsets.all(0),
                     leading: Image.asset(Appimage.logout),

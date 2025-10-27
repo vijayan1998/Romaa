@@ -1,18 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:romaa/Views/Screens/Navigation/Projects/Schedule/dailydetails.dart';
-import 'package:romaa/Views/Utilies/appname.dart';
 import 'package:romaa/Views/Utilies/image.dart';
 import 'package:romaa/Views/Utilies/sizedbox.dart';
 
-class ScheduleDaily extends StatefulWidget {
-  const ScheduleDaily({super.key});
+class ScheduleDaily extends StatelessWidget {
+  final Function()? onTap;
+  const ScheduleDaily({super.key, this.onTap});
 
-  @override
-  State<ScheduleDaily> createState() => _ScheduleDailyState();
-}
-
-class _ScheduleDailyState extends State<ScheduleDaily> {
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -22,9 +15,7 @@ class _ScheduleDailyState extends State<ScheduleDaily> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     InkWell(
-                      onTap: (){
-                        Get.toNamed(Appnames.dailydetails);
-                      },
+                      onTap:onTap,
                       child: Container(
                         padding: EdgeInsets.all(16),
                         decoration: BoxDecoration(
@@ -72,9 +63,7 @@ class _ScheduleDailyState extends State<ScheduleDaily> {
                     ),
                     8.vspace,
                     InkWell(
-                      onTap: (){
-                        DailyDetails();
-                      },
+                      onTap:onTap,
                       child: Container(
                         padding: EdgeInsets.all(16),
                         decoration: BoxDecoration(
@@ -89,9 +78,9 @@ class _ScheduleDailyState extends State<ScheduleDaily> {
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                  Text('Item #2',style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                            Text('Item #2',style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                              color: Color(0xff61758A),
                            ),),
                            Image.asset(Appimage.rightarrow)
@@ -122,9 +111,7 @@ class _ScheduleDailyState extends State<ScheduleDaily> {
                     ),
                     8.vspace,
                     InkWell(
-                      onTap: (){
-                        DailyDetails();
-                      },
+                      onTap:onTap,
                       child: Container(
                         padding: EdgeInsets.all(16),
                         decoration: BoxDecoration(
@@ -174,4 +161,5 @@ class _ScheduleDailyState extends State<ScheduleDaily> {
                 ),
               );
   }
+
 }

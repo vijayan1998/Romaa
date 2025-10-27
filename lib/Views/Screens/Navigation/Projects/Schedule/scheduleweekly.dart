@@ -3,16 +3,17 @@ import 'package:get/get.dart';
 import 'package:romaa/Views/Utilies/appname.dart';
 import 'package:romaa/Views/Utilies/image.dart';
 import 'package:romaa/Views/Utilies/sizedbox.dart';
-import 'package:romaa/Views/Widgets/retainingwall.dart';
+import 'package:romaa/Views/Widgets/schedule_weekly.dart';
 
-class DailyDetails extends StatefulWidget {
-  const DailyDetails({super.key});
+class ScheduleWeekly extends StatefulWidget {
+  const ScheduleWeekly({super.key});
 
   @override
-  State<DailyDetails> createState() => _DailyDetailsState();
+  State<ScheduleWeekly> createState() => _ScheduleWeeklyState();
 }
 
-class _DailyDetailsState extends State<DailyDetails> {
+class _ScheduleWeeklyState extends State<ScheduleWeekly> {
+  List<bool> isVisible = [false,false,false,false];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,7 +32,7 @@ class _DailyDetailsState extends State<DailyDetails> {
                       }, 
                       icon: Icon(Icons.arrow_back)),
                       16.hspace,
-                      Text('Schedule - Daily',style: Theme.of(context).textTheme.titleMedium!.copyWith(
+                      Text('Schedule - Weekly',style: Theme.of(context).textTheme.titleMedium!.copyWith(
                           fontWeight: FontWeight.bold,
                         ),),
                         Spacer(),
@@ -57,13 +58,29 @@ class _DailyDetailsState extends State<DailyDetails> {
                      fontWeight: FontWeight.bold,
                    ),),
                    16.vspace,
-              RetainingWall(title: 'Earthwork', status: 'Planned', statucolor: Color(0xffFF6F00),),
+              ScheduleWeeklyWidget(title: 'Earthwork',isVisible: isVisible[0], onPressed: (){
+                setState(() {
+                  isVisible[0] = !isVisible[0];
+                });
+              },),
               4.vspace,
-              RetainingWall(title: 'Shear Key Reinforcement', status: 'Completed', statucolor: Color(0xff008000)),
+              ScheduleWeeklyWidget(title: 'Shear Key Reinforcement',isVisible: isVisible[1], onPressed: (){
+                setState(() {
+                  isVisible[1] = !isVisible[1];
+                });
+              },),
               4.vspace,
-               RetainingWall(title: 'Shear Key Concrete - 0.4*0.3m', status: 'Planned', statucolor: Color(0xffFF6F00),),
+               ScheduleWeeklyWidget(title: 'Shear Key Concrete - 0.4*0.3m',isVisible: isVisible[2], onPressed: (){
+                setState(() {
+                  isVisible[2] = !isVisible[2];
+                });
+              },),
                4.vspace,
-                RetainingWall(title: 'Raft Reinforcement', status: 'Planned', statucolor: Color(0xffFF6F00),),
+               ScheduleWeeklyWidget(title: 'Raft Reinforcement',isVisible: isVisible[3], onPressed: (){
+                setState(() {
+                  isVisible[3] = !isVisible[3];
+                });
+              },),
                 8.vspace,
 
                       ],
@@ -75,4 +92,3 @@ class _DailyDetailsState extends State<DailyDetails> {
     );
   }
 }
-

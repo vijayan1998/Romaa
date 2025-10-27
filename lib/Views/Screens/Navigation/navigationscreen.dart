@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:romaa/Views/Screens/Navigation/Projects/projects.dart';
 import 'package:romaa/Views/Screens/Navigation/calenderscreen.dart';
 import 'package:romaa/Views/Screens/Navigation/homescreen.dart';
-import 'package:romaa/Views/Screens/Navigation/profilescreen.dart';
+import 'package:romaa/Views/Screens/Navigation/Profile/profilescreen.dart';
 import 'package:romaa/Views/Screens/Navigation/requestscreen.dart';
 import 'package:romaa/Views/Utilies/image.dart';
 import 'package:romaa/Views/Utilies/sizedbox.dart';

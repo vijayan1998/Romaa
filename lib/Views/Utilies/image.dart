@@ -63,6 +63,10 @@ class Appimage {
   static const String boqview = 'assets/icons/boqview.png';
   static const String dropdown = 'assets/icons/dropdown.png';
   static const String materialedit = 'assets/icons/edit.png'; 
+  static const String profileedit = 'assets/icons/profileedit.png';
+  static const String chat = 'assets/images/chat.png';
+  static const String chat1 = 'assets/images/chat1.png';
+  static const String img = 'assets/images/img.png';
 
 
   

@@ -159,12 +159,26 @@ class _ScheduleScreenState extends State<ScheduleScreen> with TickerProviderStat
                   child: TabBarView(
                     controller: tabController,
                     children: [
-                      ScheduleDaily(),
-                      ScheduleDaily(),
-                      ScheduleDaily(),
-                      ScheduleDaily(),
-                      ScheduleDaily(),
-                      ScheduleDaily(),
+                      ScheduleDaily(onTap: (){
+                        Get.toNamed(Appnames.dailydetails);
+                      },),
+                      ScheduleDaily(
+                        onTap: (){
+                          Get.toNamed(Appnames.scheduleweekly);
+                        },
+                      ),
+                      ScheduleDaily(onTap: (){
+                        Get.toNamed(Appnames.schedulemonthly);
+                      },),
+                      ScheduleDaily(onTap: (){
+                        Get.toNamed(Appnames.scheduleproject);
+                      },),
+                      ScheduleDaily(onTap: (){
+                        Get.toNamed(Appnames.manpower);
+                      },),
+                      ScheduleDaily(onTap: (){
+                        Get.toNamed(Appnames.machineryschedule);
+                      },),
                       
                     ]),
                 )
